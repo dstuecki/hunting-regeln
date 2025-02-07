@@ -4,7 +4,7 @@ DeviceLogonEvents
 | where AccountName !in ('sccmadmin','administrator', 'kwbadmin')
 | where AccountName !in ('dowo','papa','mipr','phho','manw','mafi','alte','mape','ersp')
 //| where AccountName in ('dowo','papa','mipr','phho','manw','mafi','alte','mape','ersp')
-| where AccountName !in ('gewi','grde','stka','vgregor','rogr','pein','heth','dare','schma','alexander tegel','frob','chpr','deth','rebe','stts')
+| where AccountName !in ('gewi','grde','stka','vgregor','rogr','pein','heth','dare','schma','alexander tegel','rese','frob','chpr','deth','rebe','stts')
 | where AccountName !contains "lenovo" and AccountName !contains "kwb_" and AccountName !contains "$temp"
 | where DeviceName contains "ATNB" or DeviceName contains "DENB" or DeviceName contains "FRNB" or DeviceName contains "ITNB" or DeviceName contains "SINB" or DeviceName contains "DEWS" or DeviceName contains "ATWS"
 | where  Timestamp > ago(48h)
